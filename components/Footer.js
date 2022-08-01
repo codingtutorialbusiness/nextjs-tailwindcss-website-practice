@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import {FaFacebookF, FaTwitter, FaInstagram} from 'react-icons/fa';
 
 
@@ -12,9 +13,9 @@ const Footer = () => {
               </div>
               <div className='flex md:justify-end justify-center'>
                 <ul>
-                  <li className='inline-block'><a className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaFacebookF /></a></li>
-                  <li className='inline-block ml-5'><a className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaTwitter /></a></li>
-                  <li className='inline-block ml-5'><a className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaInstagram /></a></li>
+                  <li className='inline-block'><Link className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaFacebookF /></Link></li>
+                  <li className='inline-block ml-5'><Link className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaTwitter /></Link></li>
+                  <li className='inline-block ml-5'><Link className='text-white duration-300 hover:text-blue-600 text-lg' href="#"><FaInstagram /></Link></li>
                 </ul>
               </div>
             </div>

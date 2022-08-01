@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const SinglePrice = (props) => {
   return (
@@ -11,7 +12,7 @@ const SinglePrice = (props) => {
             <li className='text-lg text-gray-600 font-semibold my-3'>{props.featureThree}</li>
             <li className='text-lg text-gray-600 font-semibold my-3'>{props.featureFour}</li>
         </ul>
-        <a className='bg-blue-600 text-white py-3 px-8 rounded-md inline-block mt-12 duration-300 hover:bg-blue-700' href="#">Buy Now</a>
+        <Link className='bg-blue-600 text-white py-3 px-8 rounded-md inline-block mt-12 duration-300 hover:bg-blue-700' href="#">Buy Now</Link>
     </div>
   )
 }

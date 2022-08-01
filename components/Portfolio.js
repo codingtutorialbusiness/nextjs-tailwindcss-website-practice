@@ -1,5 +1,6 @@
 import React from 'react'
 import imageList from './portfolioData';
+import Link from 'next/link'
 import SectionHeading from './SectionHeading';
 import {FaSearch} from 'react-icons/fa';
 
@@ -13,9 +14,9 @@ const Portfolio = () => {
                 <img src={imageUrl.img} alt="Portfolio" />
                 <div className='absolute w-full h-full duration-300 -translate-y-full group-hover:translate-y-0 top-0 left-0 flex items-center justify-center bg-blue-600'>
                   <div>
-                    <a className='text-4xl text-white' href="#">
+                    <Link className='text-4xl text-white' href="#">
                       <FaSearch />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

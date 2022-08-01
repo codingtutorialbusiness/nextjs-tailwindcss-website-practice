@@ -13,9 +13,9 @@ const Header = () => {
     <header className='h-20 items-center flex sticky top-0 left-0 w-full z-30 bg-black'>
         <div className="container mx-auto grid grid-cols-2 px-4 items-center">
             <div>
-                <a href='/' className='inline-block'>
+                <Link to="/" href='/' className='inline-block'>
                   <img src="/images/logo-black.png" width="50px" height="50px" alt="/" />
-                </a>
+                </Link>
             </div>
             <div className='flex justify-end'>
               <nav className='hidden lg:block'>
@@ -47,17 +47,17 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <a onClick={handleClick} className="inline-block lg:hidden text-white text-3xl" href="#">
+              <Link to="#" onClick={handleClick} className="inline-block lg:hidden text-white text-3xl" href="#">
                 <FaBars />
-              </a>
+              </Link>
               <div className={`fixed bg-slate-900 p-8 flex items-center right-0 duration-300 top-0 w-1/2 min-h-screen ${menuVal ? 'translate-x-0' : 'translate-x-full'}`}>
-                <a onClick={handleClick} className="absolute top-8 left-8 text-3xl text-white" href="#"><FaTimes /></a>
+                <Link to="#" onClick={handleClick} className="absolute top-8 left-8 text-3xl text-white" href="#"><FaTimes /></Link>
                 <ul>
-                  <li className='my-5'><a className='text-lg text-white' href="#">Home</a></li>
-                  <li className='my-5'><a className='text-lg text-white' href="#">About</a></li>
-                  <li className='my-5'><a className='text-lg text-white' href="#">Service</a></li>
-                  <li className='my-5'><a className='text-lg text-white' href="#">Price</a></li>
-                  <li className='my-5'><a className='text-lg text-white' href="#">Footer</a></li>
+                  <li className='my-5'><Link to="#" className='text-lg text-white' href="#">Home</Link></li>
+                  <li className='my-5'><Link to="#" className='text-lg text-white' href="#">About</Link></li>
+                  <li className='my-5'><Link to="#" className='text-lg text-white' href="#">Service</Link></li>
+                  <li className='my-5'><Link to="#" className='text-lg text-white' href="#">Price</Link></li>
+                  <li className='my-5'><Link to="#" className='text-lg text-white' href="#">Footer</Link></li>
                 </ul>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import BlogData from './blogData';
 import SectionHeading from './SectionHeading';
 // import { Element } from 'react-scroll';
@@ -15,7 +16,7 @@ const Blog = () => {
                   <div className='p-6'>
                     <h3 className='font-bold text-2xl text-slate-800 mb-3'>{singleBlog.title}</h3>
                     <p className='text-gray-600 text-lg font-normal'>{singleBlog.content}</p>
-                    <a className='text-blue-600 duration-300 hover:text-blue-700 text-lg font-semibold mt-3 inline-block relative after:absolute after:left-0 after:-bottom-[10px] after:h-1 after:w-0 after:bg-blue-600 after:duration-300 hover:after:w-full' href="/">Read More...</a>
+                    <Link className='text-blue-600 duration-300 hover:text-blue-700 text-lg font-semibold mt-3 inline-block relative after:absolute after:left-0 after:-bottom-[10px] after:h-1 after:w-0 after:bg-blue-600 after:duration-300 hover:after:w-full' href="/">Read More...</Link>
                   </div>
                 </div>
               ))}
